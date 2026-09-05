@@ -44,13 +44,17 @@ build/
 Build/
 build-*/
 
-# CMake generated files
+# CMake generated files (note: this repo's root Makefile is source, not generated)
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
-Makefile
 install_manifest.txt
 compile_commands.json
+
+# Vendored WebView2 SDK binaries (source, not build output)
+!third_party/WebView2/bin/WebView2Loader.dll
+!third_party/WebView2/lib/WebView2Loader.lib
+!third_party/WebView2/lib/libWebView2Loader.a
 
 # Temporary files
 *.tmp
